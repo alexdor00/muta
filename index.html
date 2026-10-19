@@ -2152,9 +2152,7 @@ async function hashPin(pin) {
 }
 
 /* =====================================================================
-   Conocimiento: músculos, rangos de Yago y textos con su fuente.
-   [Vn] = vídeo del resumen de Yago (HeraclesFit). «Evidencia» = estudios
-   citados aparte cuando los vídeos no dan una cifra.
+  
    ===================================================================== */
 
 // Rangos semanales en series contadas (directa = 1, indirecta relevante = ½) [V18].
@@ -4450,7 +4448,7 @@ function renderAuth() {
       <div class="brand-sub">Tu entrenador personal</div>
       <div class="welcome-figure">${bodyMap(m => heatDemo[m] || 0, { caps: false })}</div>
     </div>
-    <p class="sub">Entreno, comida, cardio y medidas en un solo sitio. Se ajusta solo con los principios de Yago (HeraclesFit) y la evidencia, y todo se guarda en tu móvil.</p>
+    <p class="sub">Entreno, comida, cardio y medidas en un solo sitio. </p>
     <div class="stack">
       ${has ? `<div class="eyebrow">Elige tu perfil</div>${PROFILES.map(p => `<button class="prof-card" data-act="login" data-id="${p.id}">
         <span class="avatar">${esc(initials(p.name))}</span><span class="grow"><b>${esc(p.name)}</b><br><span class="tiny">${esc(GOALS[p.goal] ? GOALS[p.goal].short : '')}${p.pin ? ', con PIN' : ''}</span></span>${p.pin ? icon('lock', 'chev') : icon('chev', 'chev', 'bold')}</button>`).join('')}` : ''}
